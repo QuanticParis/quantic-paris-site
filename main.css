@@ -1,0 +1,256 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #DDE4E6;
+}
+.navbar {
+    background: rgba(70, 152, 203, 1.0);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #dde4e6;
+    margin-right: 1em !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0957C3;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #DDE4E6;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.header {
+    background-image: url('images/paris_dark.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* position: fixed !important; */
+    /* left: unset !important; */
+}
+.header::-webkit-scrollbar {
+    display: none;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.description {
+    /* left: 50%; */
+    position: relative;
+    top: 20%;
+    /* transform: translate(-50%, 0%); */
+    text-align: center;
+    /* overflow: scroll; */
+}
+.description h1 {
+    color: #4698CB;
+}
+.description h2 {
+    font-size: 1.6rem;
+    color: #4698CB;
+    margin-top: 2em;
+}
+.description p {
+    color: #DDE4E6;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description a {
+    text-decoration: none;
+    color: #8BD3E6;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description a:hover{
+    color: #4698CB;
+}
+.description button {
+    border:1px solid #4698CB;
+    background:#4698CB;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+}
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+}
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+.background {
+    background: #B3B5B5;
+    padding: 3% 10%;
+    text-align: center;
+    position: relative;
+}
+.background p {
+    color: #0957C3;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.background h1 {
+    color: #0957C3;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+.background h3 {
+    color: #0957C3;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+.background a {
+    text-decoration: none;
+    color: #0957C3;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+.background a:hover{
+    color: #4698CB;
+}
+.list {
+    background: #B3B5B5;
+    padding: 5% 15%;
+    text-align: left;
+}
+.list p {
+    color: #000000;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+    text-align: justify;
+}
+.list h1 {
+    color: #0957C3;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-bottom: 0.5em;
+}
+.list h2 {
+    color: #000000;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+.list h3 {
+    color: #5c9cf5;
+    font-size:  1.0rem;
+    line-height:  1.0;
+    padding-bottom:  0em;
+    padding-top: 1em;
+}
+.list h4{
+    color: #000000;
+    font-size: 1.0rem;
+    line-height: 1.0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+.list a {
+    text-decoration: none;
+    color: #0957C3;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+.list a:hover{
+    color: #4698CB;
+}
+.list .card{
+    background:  none;
+    border:  none;
+}
+.team {
+    color: #7C7E7F;
+    padding: 0em 0em;
+}
+.team .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}
+.team .card {
+    background: none;
+    border: none;
+}
+.team .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.team .card h3 {
+    font-size: 1.7rem;
+    text-transform: none;
+    font-weight: normal;
+    padding-bottom: 0px;
+    padding-top: 0.7em;
+}
+.team .card p {
+    color: #000000;
+    padding-top: 0px;
+}
+.btn-primary {
+    border:0px solid #4698CB;
+    background:#4698CB;
+    border-radius: 1;
+    color:#fff;
+    font-size: 1.0rem;
+}
+.img {
+    height:  80px;
+}
+.card-img {
+    height: 120px;
+    width:  120px;
+    object-fit: cover;
+}
+.card-img-top {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+.page-footer {
+    background-color: #DDE4E6;
+    color: #4698CB;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+.img-max {
+    max-width: 150px
+  }
