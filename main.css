@@ -192,6 +192,16 @@ body {
     background:  none;
     border:  none;
 }
+/* People cards: make linked names look clickable (underlined, bolder) */
+.list .card h3 a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+.list .card h3 a:hover {
+    color: #4698CB;
+    text-decoration-thickness: 2px;
+}
 .team {
     color: #7C7E7F;
     padding: 0em 0em;
