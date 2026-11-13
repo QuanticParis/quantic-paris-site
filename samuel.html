@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Samuel Deléglise – Quantic</title>
+		<link rel="icon" href="images/DNA-favicon-128x128.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+      
+    
+<style>
+:root{--sd-accent:#2a6f97;--sd-accent2:#7b4fa3;--sd-ink:#1d2433;--sd-muted:#5b6475;--sd-card:#ffffff;--sd-line:#dfe4ec;--sd-bg:#f6f8fb}
+body{background:var(--sd-bg)}
+.sd-wrap{max-width:1040px;margin:0 auto;padding:0 16px 48px;color:var(--sd-ink);font-size:16px;line-height:1.55}
+.sd-wrap a{color:var(--sd-accent);text-decoration:none}.sd-wrap a:hover{text-decoration:underline}
+.sd-hero{margin:24px 0 8px;padding:32px;border-radius:20px;color:#fff;background:linear-gradient(120deg,#1f4e79 0%,#2a6f97 45%,#7b4fa3 100%);box-shadow:0 10px 30px rgba(31,78,121,.25)}
+.sd-hero-inner{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.sd-photo{width:168px;height:168px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.85)}
+.sd-hero h1{margin:0;font-size:2.4rem;font-weight:700;color:#fff}
+.sd-role{margin:.2rem 0;font-size:1.05rem;opacity:.95}
+.sd-tagline{margin:.6rem 0 1rem;max-width:620px;opacity:.9}
+.sd-links{display:flex;gap:8px;flex-wrap:wrap}
+.sd-chip{display:inline-block;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff!important;font-size:.9rem}
+a.sd-chip-strong{background:#fff;color:#1f4e79!important;font-weight:600}
+a.sd-chip:hover{background:rgba(255,255,255,.3);text-decoration:none!important}
+.sd-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.sd-stat{background:rgba(255,255,255,.12);border-radius:14px;padding:12px;text-align:center}
+.sd-stat b{display:block;font-size:1.9rem;line-height:1.1}.sd-stat span{font-size:.8rem;opacity:.9}
+.sd-nav{position:sticky;top:0;z-index:10;display:flex;gap:4px;flex-wrap:wrap;padding:10px 0;margin-bottom:8px;background:var(--sd-bg);border-bottom:1px solid var(--sd-line)}
+.sd-nav a{padding:4px 12px;border-radius:999px;color:var(--sd-ink)!important;font-size:.92rem}
+.sd-nav a:hover{background:#e6edf5;text-decoration:none!important}
+.sd-wrap section{padding-top:28px;scroll-margin-top:56px}
+.sd-wrap h2{font-size:1.6rem;font-weight:700;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--sd-accent)}
+.sd-wrap h2 small{font-size:.9rem;font-weight:400;color:var(--sd-muted)}
+.sd-sub{font-size:1.15rem;font-weight:600;margin:22px 0 10px}
+.sd-muted{color:var(--sd-muted)}
+.sd-figs{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:18px 0}
+.sd-banner{margin:18px 0 0;background:var(--sd-card);border-radius:16px;padding:10px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.sd-banner img{width:100%;border-radius:12px;display:block}
+.sd-banner figcaption{font-size:.88rem;color:var(--sd-muted);margin:8px 4px 2px}
+.sd-figs figure{margin:0;background:var(--sd-card);border-radius:16px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.sd-figs img{width:100%;border-radius:10px}
+.sd-figs figcaption{font-size:.88rem;color:var(--sd-muted);margin-top:8px}
+.sd-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sd-cards-3{grid-template-columns:repeat(3,1fr)}.sd-cards-2{grid-template-columns:repeat(2,1fr)}
+.sd-card{background:var(--sd-card);border-radius:14px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);border-top:4px solid var(--sd-line)}
+.sd-card h3{font-size:1.02rem;font-weight:650;margin:.4rem 0}
+.sd-card p{margin:0;font-size:.9rem}
+.sd-active{border-top-color:var(--sd-accent2)}
+.sd-card-top{display:flex;justify-content:space-between;align-items:center;font-size:.85rem}
+.sd-tag{display:inline-block;padding:1px 9px;border-radius:999px;background:#e9e1f3;color:var(--sd-accent2);font-weight:600;font-size:.78rem}
+.sd-timeline{list-style:none;padding:0;margin:0;border-left:2px solid var(--sd-line);margin-left:6px}
+.sd-timeline li{position:relative;display:grid;grid-template-columns:120px 1fr;gap:16px;padding:8px 0 10px 18px}
+.sd-timeline li:before{content:"";position:absolute;left:-7px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--sd-accent);border:2px solid var(--sd-bg)}
+.sd-compact li{padding:4px 0 6px 18px}
+.sd-when{color:var(--sd-accent);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sd-prize{font-size:.9rem;color:#8a5a00}
+.sd-list{padding-left:20px}
+.sd-year{font-size:1.1rem;font-weight:700;color:var(--sd-accent);margin:18px 0 6px}
+.sd-pubs{list-style:none;padding:0;margin:0}
+.sd-pubs li{padding:8px 12px;margin-bottom:6px;background:var(--sd-card);border-radius:10px;font-size:.93rem}
+.sd-ptitle{font-weight:600}
+@media (max-width:820px){.sd-cards,.sd-cards-3{grid-template-columns:1fr 1fr}.sd-figs{grid-template-columns:1fr}.sd-stats{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.sd-cards,.sd-cards-3,.sd-cards-2{grid-template-columns:1fr}.sd-timeline li{grid-template-columns:1fr;gap:2px}.sd-hero{padding:20px}.sd-hero h1{font-size:1.9rem}}
+</style>
+    </head>
+    
+    <body>
+
+        <nav class="navbar navbar-light navbar-expand-md" aria-label="Quantic Navbar">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarQuantic" aria-controls="navbarQuantic" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+		
+			  <div class="collapse navbar-collapse" id="navbarQuantic">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Quantic</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="research.html">Research</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="people.html">People</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="publications.html">Publications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="links.html">Links</a>
+					</li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+
+        <div class="sd-wrap">
+<header class="sd-hero">
+  <div class="sd-hero-inner">
+    <img class="sd-photo" src="images/samuel.jpg" alt="Portrait of Samuel Deléglise">
+    <div>
+      <h1>Samuel Deléglise</h1>
+      <p class="sd-role">CNRS researcher &middot; QUANTIC team, Laboratoire de Physique de l'ENS, Paris</p>
+      <p class="sd-tagline">Hybrid quantum systems: macroscopic mechanical resonators driven into the quantum regime by superconducting circuits.</p>
+      <div class="sd-links">
+        <span class="sd-chip">✉ samuel.deleglise [at] cnrs.fr</span>
+        <a class="sd-chip sd-chip-strong" href="files/Samuel_Deleglise_CV.pdf">⬇ CV (PDF)</a>
+        <a class="sd-chip" href="https://scholar.google.com/citations?user=zb_xnPMAAAAJ">Google Scholar</a>
+        <a class="sd-chip" href="https://arxiv.org/search/?searchtype=author&query=Del%C3%A9glise%2C+S">arXiv</a>
+        <a class="sd-chip" href="https://github.com/pyrpl-fpga/pyrpl">PyRPL</a>
+      </div>
+    </div>
+  </div>
+</header><nav class="sd-nav"><a href="#research">Research</a><a href="#career">Career</a><a href="#grants">Grants</a><a href="#team">Supervision</a><a href="#talks">Invited talks</a><a href="#teaching">Teaching</a><a href="#ip">Patents & software</a><a href="#publications">Publications</a></nav>
+<section id="research">
+  <h2>Research</h2>
+  <p>Mechanical resonators can now be fabricated with quality factors above a billion and lifetimes of seconds. I couple such
+  massive, ultra-coherent oscillators to superconducting qubits in order to prepare, control and measure their quantum states,
+  with applications to quantum sensing, quantum memories and fundamental tests of quantum mechanics with massive objects.</p>
+  <figure class="sd-banner">
+    <img src="images/samuel/mecaflux_render.jpg" alt="3D rendering of the MecaFlux device: a metallized membrane chip flipped over a fluxonium circuit">
+    <figcaption><b>MecaFlux.</b> A suspended Si<sub>3</sub>N<sub>4</sub> membrane chip is flip-chipped above a superconducting
+    “heavy” fluxonium; the membrane motion modulates the qubit charge, enabling resonant qubit–phonon exchange
+    (<a href="https://arxiv.org/abs/2505.21481">arXiv:2505.21481</a>).</figcaption>
+  </figure>
+  <div class="sd-figs">
+    <figure>
+      <img src="images/samuel/chip_false_color.jpg" alt="False-color optical micrograph of the fluxonium chip">
+      <figcaption><b>The circuit.</b> False-color micrograph of the fluxonium chip: superinductance, junction, coupling electrodes and readout.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/samuel/membrane_coin.jpg" alt="Silicon nitride membrane chip next to a one-cent coin">
+      <figcaption><b>The mechanics.</b> Phononic-crystal Si<sub>3</sub>N<sub>4</sub> membranes on a silicon chip, next to a 1-cent coin.</figcaption>
+    </figure>
+  </div>
+  <div class="sd-cards">
+    <div class="sd-card"><h3>Hybrid circuits</h3><p>Fluxonium and high-impedance circuits coupled to ultra-coherent membranes and drums.</p></div>
+    <div class="sd-card"><h3>Quantum sensing</h3><p>AC-charge detection, rf-to-microwave transduction, microwave photon counting.</p></div>
+    <div class="sd-card"><h3>Bosonic codes</h3><p>Dissipative stabilization, squeezed cat qubits, mechanical modes as quantum memories.</p></div>
+    <div class="sd-card"><h3>Fundamental tests</h3><p>Massive quantum oscillators to probe gravity-related wavefunction collapse.</p></div>
+  </div>
+</section>
+<section id="career">
+  <h2>Career</h2>
+  <ul class="sd-timeline"><li><span class="sd-when">2026 –</span><div><b>CNRS researcher, QUANTIC team</b><br><span class="sd-muted">Laboratoire de Physique de l'ENS, Paris</span></div></li><li><span class="sd-when">2012 – 2025</span><div><b>CNRS researcher, Optomechanics & Quantum Measurements group</b><br><span class="sd-muted">Laboratoire Kastler Brossel, Paris &mdash; quantum optomechanics, hybrid qubit–mechanics platform; member of the Virgo collaboration</span></div></li><li><span class="sd-when">2009 – 2012</span><div><b>Marie Curie postdoctoral fellow</b><br><span class="sd-muted">EPFL, Lausanne &mdash; group of Tobias Kippenberg, optomechanics with microresonators</span></div></li><li><span class="sd-when">2006 – 2009</span><div><b>PhD in physics</b><br><span class="sd-muted">Laboratoire Kastler Brossel (ENS / UPMC) &mdash; advisor Serge Haroche. <i>Reconstruction of non-classical field states in cavity quantum electrodynamics</i></span></div></li><li><span class="sd-when">2005 – 2006</span><div><b>Master in quantum physics</b><br><span class="sd-muted">École Normale Supérieure, Paris</span></div></li><li><span class="sd-when">2002 – 2005</span><div><b>Engineering degree</b><br><span class="sd-muted">École Polytechnique</span></div></li></ul>
+  <h3 class="sd-sub">Distinctions</h3>
+  <ul class="sd-list"><li><b>Gruber Cosmology Prize</b> (2016) &mdash; awarded to the LIGO–Virgo collaboration</li><li><b>Breakthrough Prize</b> (2016) &mdash; awarded to the LIGO–Virgo collaboration</li><li><b>Gustave Ribaud Prize</b> (2012) &mdash; French Academy of Sciences</li></ul>
+</section><section id="grants"><h2>Grants <small>(since 2014)</small></h2><div class="sd-cards sd-cards-3"><div class="sd-card sd-active">
+  <div class="sd-card-top"><span class="sd-tag">Ferbo</span><span class="sd-muted">2023 – 2028</span></div>
+  <h3>The Fermio-bosonic qubit</h3>
+  <p class="sd-muted">ANR PRCE &middot; partner &middot; 150 k€</p></div><div class="sd-card sd-active">
+  <div class="sd-card-top"><span class="sd-tag">MecaFlux</span><span class="sd-muted">2021 – 2026</span></div>
+  <h3>Quantum control of an ultra-coherent mechanical resonator with a fluxonium qubit</h3>
+  <p class="sd-muted">ANR PRCE &middot; PI &middot; 640 k€</p></div><div class="sd-card">
+  <div class="sd-card-top"><span class="sd-tag">HyQuTech</span><span class="sd-muted">2019 – 2022</span></div>
+  <h3>Hybrid nano-Mechanical and Superconducting Systems for Quantum Technologies</h3>
+  <p class="sd-muted">Sorbonne Université Émergences &middot; PI &middot; 90 k€</p></div><div class="sd-card">
+  <div class="sd-card-top"><span class="sd-tag">CryoParis</span><span class="sd-muted">2018 – 2022</span></div>
+  <h3>Cryogenic platform for quantum technologies</h3>
+  <p class="sd-muted">SIRTEQ (DIM Île-de-France) equipment programme &middot; PI &middot; 280 k€</p></div><div class="sd-card">
+  <div class="sd-card-top"><span class="sd-tag">OMT</span><span class="sd-muted">2016 – 2020</span></div>
+  <h3>Optomechanical Technologies</h3>
+  <p class="sd-muted">H2020 Marie Curie Actions — Innovative Training Networks (ETN) ITN &middot; partner</p></div><div class="sd-card">
+  <div class="sd-card-top"><span class="sd-tag">QuNaT</span><span class="sd-muted">2014 – 2019</span></div>
+  <h3>Quantum Nanomechanical Transducers</h3>
+  <p class="sd-muted">ANR JCJC &middot; PI &middot; 300 k€</p></div></div></section>
+<section id="team">
+  <h2>Supervision</h2>
+  <h3 class="sd-sub">PhD students</h3>
+  <ul class="sd-timeline"><li><span class="sd-when">2026 – </span><div><b>Mathis Roussel</b> <span class=sd-tag>ongoing</span><br><span class=sd-muted>co-supervised with Zaki Leghtas &middot; CIFRE with Alice &amp; Bob</span></div></li><li><span class="sd-when">2026 – </span><div><b>Louis Godet</b> <span class=sd-tag>ongoing</span><br><span class=sd-muted>co-supervised with Thibaut Jacqmin</span></div></li><li><span class="sd-when">2023 – </span><div><b>Paul Manset</b> <span class=sd-tag>ongoing</span></div></li><li><span class="sd-when">2022 – 2025</span><div><b>Rémi Rousseau</b><br><span class=sd-muted>Quantum Control of Harmonic Oscillators with Superconducting Circuits — Dissipative Stabilization of a Squeezed-Cat Qubit &amp; Quantum Sensing of a Mechanical Resonator</span><br><span class=sd-prize>🏆 SFO PhD thesis prize, 2026</span></div></li><li><span class="sd-when">2021 – 2025</span><div><b>Himanshu Patange</b><br><span class=sd-muted><a href="https://theses.hal.science/tel-05167100">RF Transduction in a DC-Biased Superconducting Electromechanical System</a></span></div></li><li><span class="sd-when">2021 – 2025</span><div><b>Kyrylo Gerashchenko</b><br><span class=sd-muted>Probing the quantum motion of a macroscopic mechanical oscillator with a radio-frequency superconducting qubit</span><br><span class=sd-prize>🏆 Dylan Cattiaux PhD prize, first runner-up, 2026</span></div></li><li><span class="sd-when">2020 – 2024</span><div><b>Luis Najera-Santos</b><br><span class=sd-muted><a href="https://theses.hal.science/THESES-SU/tel-04696738v1">Radio-frequency fluxonium superconducting qubit for AC-charge sensing applications</a></span></div></li><li><span class="sd-when">2018 – 2021</span><div><b>Édouard Ivanov</b><br><span class=sd-muted><a href="https://theses.hal.science/tel-03190442">Optimization of silicon nitride membranes for hybrid superconducting-mechanical circuits</a></span></div></li><li><span class="sd-when">2016 – 2020</span><div><b>Thibault Capelle</b><br><span class=sd-muted><a href="https://theses.hal.science/tel-03030362">Electromechanical cooling and parametric amplification of an ultrahigh-Q mechanical oscillator</a></span></div></li></ul>
+  <h3 class="sd-sub">Postdocs</h3><p>Léo Balembois (2023 – 2025), Xu Chen (2015 – 2017)</p>
+</section><section id="talks"><h2>Invited talks <small>(since 2016; 24 in total)</small></h2>
+<ul class="sd-timeline sd-compact"><li><span class="sd-when">06/2027</span><div><b>FNS 2027 — Frontiers of Nanomechanical Systems</b>, INL, Braga, Portugal <span class="sd-tag">upcoming</span></div></li><li><span class="sd-when">04/2027</span><div><b>DK ALM Physics Colloquium, Universität Innsbruck</b>, Innsbruck, Austria <span class="sd-tag">upcoming</span></div></li><li><span class="sd-when">11/2026</span><div><b>Seminar LOMA</b>, Bordeaux (Talence), France<br><span class="sd-muted">Probing the quantum motion of a MHz mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">03/2026</span><div><b>Seminar ICFO</b>, ICFO, Castelldefels, Barcelona, Spain<br><span class="sd-muted">Probing the quantum motion of a MHz mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">03/2026</span><div><b>Hybrid Quantum System Workshop</b>, Ascona, Switzerland<br><span class="sd-muted">Probing the quantum motion of a macroscopic mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">01/2026</span><div><b>Seminar LIP</b>, ENS Lyon, France<br><span class="sd-muted">Probing the quantum motion of a macroscopic mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">10/2025</span><div><b>Symposium &#x27;40 years of quantum optics&#x27;</b>, Paris, France<br><span class="sd-muted">Probing the quantum motion of a macroscopic mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">04/2025</span><div><b>Seminar CEA/SPEC</b>, Saclay, France<br><span class="sd-muted">Probing the quantum motion of a macroscopic mechanical resonator with a resonant rf-fluxonium</span></div></li><li><span class="sd-when">12/2024</span><div><b>GDR Mesoscopic Physics</b>, Aussois, France<br><span class="sd-muted">Interfacing a macroscopic mechanical resonator with a MHz-Fluxonium qubit</span></div></li><li><span class="sd-when">07/2024</span><div><b>General congress of the Société Française d&#x27;Optique</b>, Rouen, France<br><span class="sd-muted">MHz-fluxonium qubit for quantum control of mechanical systems</span></div></li><li><span class="sd-when">03/2024</span><div><b>Gordon Research Conference on Mechanical Systems in the Quantum Regime</b>, Ventura, Californie, USA<br><span class="sd-muted">MHz-fluxonium qubit for quantum control of mechanical systems</span></div></li><li><span class="sd-when">12/2023</span><div><b>Seminar NEQ, Institut Néel</b>, Grenoble, France<br><span class="sd-muted">Towards quantum control of an ultracoherent mechanical resonator with a RF-fluxonium qubit</span></div></li><li><span class="sd-when">02/2022</span><div><b>CNRS / U. Arizona IRC kick-off</b>, Tucson, USA<br><span class="sd-muted">A Mechanics-based Microwave to Optical Quantum Link</span></div></li><li><span class="sd-when">01/2019</span><div><b>OMT/HOT annual meeting</b>, Gstaad, Switzerland<br><span class="sd-muted">Electromechanics — towards heralded non-classical motional states</span></div></li><li><span class="sd-when">10/2018</span><div><b>SMYLE kick-off meeting</b>, Neuchâtel, Switzerland<br><span class="sd-muted">Optomechanical systems in the quantum regime</span></div></li><li><span class="sd-when">01/2018</span><div><b>OMT/HOT annual meeting</b>, Gstaad, Switzerland<br><span class="sd-muted">Tutorial on Optomechanical Resonators</span></div></li><li><span class="sd-when">07/2017</span><div><b>Annual congress of the Société Française de Physique</b>, Orsay, France<br><span class="sd-muted">Quantum optomechanics — experiments and applications</span></div></li><li><span class="sd-when">03/2017</span><div><b>Workshop on axion physics and experiment</b>, Rome, Italy<br><span class="sd-muted">Superconducting resonators in quantum engineering</span></div></li><li><span class="sd-when">02/2017</span><div><b>SPIE Photonics West</b>, San Francisco, USA<br><span class="sd-muted">Photonic crystal slabs for optomechanics</span></div></li><li><span class="sd-when">04/2016</span><div><b>11th International Conference on Laser-light and Interactions with Particles (LIP2016)</b>, Xi&#x27;An, Chine<br><span class="sd-muted">Quantum effects in optomechanical systems</span></div></li></ul></section><section id="teaching"><h2>Teaching</h2><ul class="sd-timeline sd-compact"><li><span class="sd-when">2017 – 2024</span><div><b>Quantum Machines</b> &mdash; quantum physics with electrical circuits and mechanical resonators, M2 ICFP, ENS Paris</div></li><li><span class="sd-when">2016 – 2017</span><div><b>Quantum optomechanics and nanomechanics</b>, M2 ICFP, ENS Paris</div></li><li><span class="sd-when">2024</span><div><b>From gravitational-wave detection to quantum optomechanics</b>, Mesoscopic physics school, Cargèse</div></li><li><span class="sd-when">2022</span><div><b>The New Mechanics</b>, Les Houches school of physics</div></li><li><span class="sd-when">2019 – 2020</span><div><b>Optomechanics MOOC</b>, European OMT network</div></li><li><span class="sd-when">2017 – 2018</span><div><b>Introductory quantum physics SPOC</b> (L3), Sorbonne Université</div></li><li><span class="sd-when">2016 – 2020</span><div><b>Python programming projects</b>, M2 LUMI, Sorbonne Université</div></li></ul></section><section id="ip"><h2>Patents &amp; software</h2><div class="sd-cards sd-cards-2"><div class="sd-card"><div class="sd-card-top"><span class="sd-tag">Patent</span><span class="sd-muted">EP3899814B1</span></div><h3>Device and method for detecting single microwave photons</h3><p class="sd-muted">Raphaël Lescanne, Samuel Deléglise, Emmanuel Flurin, Zaki Leghtas</p></div><div class="sd-card"><div class="sd-card-top"><span class="sd-tag">Open source</span></div><h3><a href="https://github.com/pyrpl-fpga/pyrpl">PyRPL (Python Red Pitaya Lockbox)</a></h3><p class="sd-muted">FPGA-based digital feedback control for quantum-optics experiments on the Red Pitaya board. Neuhaus, Croquette, Metzdorff, Chua, Jacquet, Journeaux, Heidmann, Briant, Jacqmin, Cohadon, Deléglise, Rev. Sci. Instrum. 95, 033003 (2024)</p></div></div></section><section id="publications"><h2>Publications</h2>
+<p class="sd-muted">31 articles excluding large collaborations, plus 179 papers as a member of the Virgo collaboration
+(first detections of gravitational waves). Citation data: <a href="https://scholar.google.com/citations?user=zb_xnPMAAAAJ">Google Scholar</a>.</p>
+<h3 class="sd-year">2025</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Enhancing dissipative cat qubit protection by squeezing</span><br><span class="sd-muted">R. Rousseau, D. Ruiz, E. Albertinale, …, <b>S. Deléglise</b>, et al.</span> &middot; Preprint &middot; <a href="http://arxiv.org/abs/2502.07892">arXiv</a></li><li><span class="sd-ptitle">Hyperinductance based on stacked Josephson junctions</span><br><span class="sd-muted">P. Manset, J. Palomo, A. Schmitt, K. Gerashchenko, R. Rousseau, H. Patange, P. Abgrall, E. Flurin, <b>S. Deléglise</b>, T. Jacqmin, L. Balembois</span> &middot; Preprint &middot; <a href="http://arxiv.org/abs/2505.02764">arXiv</a></li><li><span class="sd-ptitle">Probing the quantum motion of a macroscopic mechanical oscillator with a radio-frequency superconducting qubit</span><br><span class="sd-muted">K. Gerashchenko, R. Rousseau, L. Balembois, H. Patange, P. Manset, W. C. Smith, Z. Leghtas, E. Flurin, T. Jacqmin, <b>S. Deléglise</b></span> &middot; Preprint &middot; <a href="http://arxiv.org/abs/2505.21481">arXiv</a></li><li><span class="sd-ptitle">Cryogenic rf-to-microwave transducer based on a dc-biased electromechanical system</span><br><span class="sd-muted">H. Patange, K. Gerashchenko, R. Rousseau, P. Manset, L. Balembois, T. Capelle, <b>S. Deléglise</b>, T. Jacqmin</span> &middot; <a href="https://doi.org/10.5802/crphys.273">Comptes Rendus. Physique</a> &middot; <a href="http://arxiv.org/abs/2508.01066">arXiv</a></li></ul><h3 class="sd-year">2024</h3><ul class="sd-pubs"><li><span class="sd-ptitle">High-Sensitivity ac-Charge Detection with a MHz-Frequency Fluxonium Qubit</span><br><span class="sd-muted">B. Najera-Santos, R. Rousseau, K. Gerashchenko, …, <b>S. Deléglise</b>, et al.</span> &middot; <a href="https://doi.org/10.1103/physrevx.14.011007">Physical Review X</a> &middot; <a href="http://arxiv.org/abs/2307.14329">arXiv</a></li><li><span class="sd-ptitle">Python Red Pitaya Lockbox (PyRPL): An open source software package for digital feedback control in quantum optics experiments</span><br><span class="sd-muted">L. Neuhaus, M. Croquette, R. Metzdorff, S. Chua, P. Jacquet, A. Journeaux, A. Heidmann, T. Briant, T. Jacqmin, P. Cohadon, <b>S. Deléglise</b></span> &middot; <a href="https://doi.org/10.1063/5.0178481">Review of Scientific Instruments</a> &middot; <a href="http://arxiv.org/abs/2310.00086">arXiv</a></li></ul><h3 class="sd-year">2023</h3><ul class="sd-pubs"><li><span class="sd-ptitle">FPGA-based feedback control of quantum optics experiments with the open source software package PyRPL</span><br><span class="sd-muted">L. Neuhaus, M. Croquette, R. Metzdorff, S. Chua, P. Jacquet, A. Journeaux, A. Heidmann, T. Briant, T. Jacqmin, P. Cohadon, <b>S. Deléglise</b></span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/2310.00086">arXiv</a></li></ul><h3 class="sd-year">2021</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Laser cooling of a Planck mass object close to the quantum ground state</span><br><span class="sd-muted">L. Neuhaus, R. Metzdorff, S. Zerkani, …, <b>S. Deléglise</b>, et al.</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/2104.11648">arXiv</a></li></ul><h3 class="sd-year">2020</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Irreversible Qubit-Photon Coupling for the Detection of Itinerant Microwave Photons</span><br><span class="sd-muted">R. Lescanne, <b>S. Deléglise</b>, E. Albertinale, U. Réglade, T. Capelle, E. Ivanov, T. Jacqmin, Z. Leghtas, E. Flurin</span> &middot; <a href="https://doi.org/10.1103/PhysRevX.10.021038">Physical Review X</a></li><li><span class="sd-ptitle">Probing a Two-Level System Bath via the Frequency Shift of an Off-Resonantly Driven Cavity</span><br><span class="sd-muted">T. Capelle, E. Flurin, E. Ivanov, J. Palomo, M. Rosticher, S. Chua, T. Briant, P. Cohadon, A. Heidmann, T. Jacqmin, <b>S. Deléglise</b></span> &middot; <a href="https://doi.org/10.1103/PhysRevApplied.13.034022">Physical Review Applied</a> &middot; <a href="http://arxiv.org/abs/1805.04397">arXiv</a></li><li><span class="sd-ptitle">Edge mode engineering for optimal ultracoherent silicon nitride membranes</span><br><span class="sd-muted">E. Ivanov, T. Capelle, M. Rosticher, J. Palomo, T. Briant, P. Cohadon, A. Heidmann, T. Jacqmin, <b>S. Deléglise</b></span> &middot; <a href="https://doi.org/10.1063/5.0031626">Applied Physics Letters</a> &middot; <a href="http://arxiv.org/abs/2010.00898">arXiv</a></li></ul><h3 class="sd-year">2019</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Detecting itinerant microwave photons with engineered non-linear dissipation</span><br><span class="sd-muted">R. Lescanne, <b>S. Deléglise</b>, E. Albertinale, U. Réglade, T. Capelle, E. Ivanov, T. Jacqmin, Z. Leghtas, E. Flurin</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/1902.05102">arXiv</a></li></ul><h3 class="sd-year">2018</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Adiabatic elimination for multi-partite open quantum systems with non-trivial zero-order dynamics</span><br><span class="sd-muted">P. Forni, A. Sarlette, T. Capelle, E. Flurin, <b>S. Deléglise</b>, P. Rouchon</span> &middot; COMM &middot; <a href="https://arxiv.org/abs/1803.07810">arXiv</a></li><li><span class="sd-ptitle">Cryogenic optomechanic cavity in low mechanical loss material</span><br><span class="sd-muted">J. Bon, L. Neuhaus, <b>S. Deléglise</b>, T. Briant, P. Abbé, P. Cohadon, S. Galliou</span> &middot; <a href="https://doi.org/10.1063/1.5042058">J.Appl.Phys.</a></li><li><span class="sd-ptitle">Optomechanical coupling in a quartz crystal resonator for cryogenic clocks</span><br><span class="sd-muted">J. Bon, K. Rosenziveig, P. Abbé, C. Rocher, S. Galliou, L. Neuhaus, <b>S. Deléglise</b>, T. Briant, P. Cohadon</span> &middot; COMM</li></ul><h3 class="sd-year">2017</h3><ul class="sd-pubs"><li><span class="sd-ptitle">High-finesse Fabry-Perot cavities with bidimensional Si3N4 photonic-crystal slabs</span><br><span class="sd-muted">X. Chen, C. Chardin, K. Makles, C. Caër, S. Chua, R. Braive, I. Philip, T. Briant, P. Cohadon, A. Heidmann, T. Jacqmin, <b>S. Deléglise</b></span> &middot; <a href="https://doi.org/10.1038/lsa.2016.190">Light: Science and Applications</a> &middot; <a href="https://arxiv.org/abs/1603.07200">arXiv</a></li></ul><h3 class="sd-year">2016</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Acoustic confinement in superlattice cavities</span><br><span class="sd-muted">D. Garcia-Sanchez, S. Déleglise, J. Thomas, P. Atkinson, C. Lagoin, B. Perrin</span> &middot; <a href="https://doi.org/10.1103/PhysRevA.94.033813">Physical Review A : Atomic, molecular, and optical physics [1990-2015]</a> &middot; <a href="http://arxiv.org/abs/1606.02211">arXiv</a></li><li><span class="sd-ptitle">A new method of probing mechanical losses of coatings at cryogenic temperatures</span><br><span class="sd-muted">S. E. Galliou, <b>S. Deléglise</b>, M. E. Goryachev, et al.</span> &middot; <a href="https://doi.org/10.1063/1.4972106">Review of Scientific Instruments</a> &middot; <a href="http://arxiv.org/abs/1605.07697">arXiv</a></li></ul><h3 class="sd-year">2015</h3><ul class="sd-pubs"><li><span class="sd-ptitle">2D photonic-crystal optomechanical nanoresonator</span><br><span class="sd-muted">K. Makles, T. Antoni, A. Kuhn, …, <b>S. Deléglise</b>, et al.</span> &middot; <a href="https://doi.org/10.1364/OL.40.000174">Optics Letters</a> &middot; <a href="http://arxiv.org/abs/1410.6303">arXiv</a></li></ul><h3 class="sd-year">2014</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Free-space cavity optomechanics in a cryogenic environment</span><br><span class="sd-muted">A. G. Kuhn, J. Teissier, L. Neuhaus, …, <b>S. Deléglise</b>, et al.</span> &middot; <a href="https://doi.org/10.1063/1.4863666">Applied Physics Letters</a></li></ul><h3 class="sd-year">2011</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Quantum-coherent coupling of a mechanical oscillator to an optical cavity mode</span><br><span class="sd-muted">E. Verhagen, <b>S. Deléglise</b>, S. Weis, A. Schliesser, T. J. Kippenberg</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/1107.3761">arXiv</a></li></ul><h3 class="sd-year">2010</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Optomechanically induced transparency</span><br><span class="sd-muted">S. Weis, R. Riviere, <b>S. Deléglise</b>, E. Gavartin, O. Arcizet, A. Schliesser, T. J. Kippenberg</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/1007.0565">arXiv</a></li><li><span class="sd-ptitle">Determination of the vacuum optomechanical coupling rate using frequency noise calibration</span><br><span class="sd-muted">M. Gorodetsky, A. Schliesser, G. Anetsberger, <b>S. Deléglise</b>, T. J. Kippenberg</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/1009.4231">arXiv</a></li><li><span class="sd-ptitle">Optomechanical sideband cooling of a micromechanical oscillator close to the quantum ground state</span><br><span class="sd-muted">R. Riviere, <b>S. Deléglise</b>, S. Weis, E. Gavartin, O. Arcizet, A. Schliesser, T. J. Kippenberg</span> &middot; Preprint &middot; <a href="https://arxiv.org/abs/1011.0290">arXiv</a></li><li><span class="sd-ptitle">The quantum Zeno effect and quantum feedback in cavity QED</span><br><span class="sd-muted">I. Dotsenko, J. Bernu, <b>S. Deléglise</b>, C. Sayrin, M. Brune, J. Raimond, S. Haroche, M. Mirrahimi, P. Rouchon</span> &middot; <a href="https://doi.org/10.1088/0031-8949/2010/T140/014004">Physica Scripta</a></li></ul><h3 class="sd-year">2008</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Reconstruction of non-classical cavity field states with snapshots of their decoherence</span><br><span class="sd-muted"><b>S. Deléglise</b>, I. Dotsenko, C. Sayrin, J. Bernu, M. Brune, J. Raimond, S. Haroche</span> &middot; <a href="https://doi.org/10.1038/nature07288">Nature</a> &middot; <a href="http://arxiv.org/abs/0809.1064">arXiv</a></li><li><span class="sd-ptitle">Freezing a Coherent Field Growth in a Cavity by Quantum Zeno Effect</span><br><span class="sd-muted">J. Bernu, <b>S. Deléglise</b>, C. Sayrin, S. Kuhr, I. Dotsenko, M. Brune, J. Raimond, S. Haroche</span> &middot; <a href="https://doi.org/10.1103/PhysRevLett.101.180402">Physical Review Letters</a> &middot; <a href="http://arxiv.org/abs/0809.4388">arXiv</a></li><li><span class="sd-ptitle">Process tomography of field damping and measurement of Fock state lifetimes by quantum non-demolition photon counting in a cavity</span><br><span class="sd-muted">M. Brune, J. Bernu, C. Guerlin, <b>S. Deléglise</b>, C. Sayrin, S. Gleyzes, S. Kuhr, I. Dotsenko, J. Raimond, S. Haroche</span> &middot; <a href="https://doi.org/10.1103/PhysRevLett.101.240402">Physical Review Letters</a> &middot; <a href="https://arxiv.org/abs/0809.1511">arXiv</a></li></ul><h3 class="sd-year">2007</h3><ul class="sd-pubs"><li><span class="sd-ptitle">Quantum jumps of light recording the birth and death of a photon in a cavity</span><br><span class="sd-muted">S. Gleyzes, S. Kuhr, C. Guerlin, J. Bernu, <b>S. Deléglise</b>, U. B. Hoff, M. Brune, J. Raimond, S. Haroche</span> &middot; <a href="https://doi.org/10.1038/nature05589">Nature</a> &middot; <a href="http://arxiv.org/abs/quant-ph/0612031">arXiv</a></li><li><span class="sd-ptitle">Progressive field-state collapse and quantum non-demolition photon counting</span><br><span class="sd-muted">C. Guerlin, J. Bernu, <b>S. Deléglise</b>, C. Sayrin, S. Gleyzes, S. Kuhr, M. Brune, J. Raimond, S. Haroche</span> &middot; <a href="https://doi.org/10.1038/nature06057">Nature</a> &middot; <a href="http://arxiv.org/abs/0707.3880">arXiv</a></li><li><span class="sd-ptitle">Ultrahigh finesse Fabry-Perot superconducting resonator</span><br><span class="sd-muted">S. Kuhr, S. Gleyzes, C. Guerlin, …, <b>S. Deléglise</b>, et al.</span> &middot; <a href="https://doi.org/10.1063/1.2724816">Applied Physics Letters</a> &middot; <a href="http://arxiv.org/abs/quant-ph/0612138">arXiv</a></li></ul></section></div>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="row" style="margin-top: 10mm;">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-2">
+                            <h6 class="text-uppercase font-weight-bold">Theory</h6>
+                            <p>48 rue Barrault
+                            <br/>75013 Paris, France</p>
+                        </div>
+                        <!div class="col-lg-1"><!/div>
+                        <div class="col-lg-3">
+                            <h6 class="text-uppercase font-weight-bold">Experiment</h6>
+                            <p>24 rue Lhomond
+                            <br/>Laboratoire de Physique de l'ENS
+                            <br/>Rooms L069, L074, GH012, GH015
+                            <br/>75005 Paris, France</p>
+                        </div>
+                    </div>
+                <div>
+        </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+
+        <script src="main.js"></script>
+
+    </body>
+    
+</html>
