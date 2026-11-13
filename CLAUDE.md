@@ -30,6 +30,6 @@ Answer in the user's language.
 - Nothing confidential: no unpublished results, grant proposals, internal budgets, personal phone numbers or private addresses.
 - Only touch what the user asked for; don't reformat whole files.
 - Preview before publishing: `python3 -m http.server 8000` at the repo root, then open http://localhost:8000/<page>.html. Stop the server afterwards.
-- Publishing: `git pull`, then commit on `main` with a clear message and `git push` (no pull request needed — team decision 13/11/2026). **Before pushing, show the user the diff summary and get an explicit OK.** After pushing, check the live page (https://quantic-paris.fr/<page>.html) after ~1–2 min.
+- Publishing: `git pull`, then commit on `main` with a clear message and `git push` (no pull request needed — team decision 13/11/2026). **Before pushing, show the user the diff summary and get an explicit OK.** After pushing, check the live page (https://quantic-paris.fr/<page>.html) after ~1–2 min. Every push is announced in Slack `#topic-github`.
 - If something breaks: `git revert` the commit and push.
 - No push access? The user sends their GitHub username to Samuel Deléglise (maintainer) to join the QuanticParis org.
